@@ -2,6 +2,8 @@
 //Lab 2
 //Main Class Event Planner GUI
 import javax.swing.*;
+import java.time.LocalDateTime;
+
 
 public class EventPlanner {
     // The main method that runs the application
@@ -31,5 +33,7 @@ public class EventPlanner {
 
         eventListPanel.addEvent(deadline);  // Add the deadline event to the list
         eventListPanel.addEvent(meeting);  // Add the meeting event to the list
+
+
     }
 }
