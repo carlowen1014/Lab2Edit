@@ -5,7 +5,8 @@
 import java.time.LocalDateTime;
 import java.time.Duration;
 
-public class Meeting extends Event implements Completable {
+public class Meeting extends Event implements Completable
+{
     //endDateTime: when the meeting ends
     private LocalDateTime endDateTime;
 
@@ -16,7 +17,8 @@ public class Meeting extends Event implements Completable {
     private boolean complete;
 
     //Constructor: creates a Meeting event
-    public Meeting(String name, LocalDateTime start, LocalDateTime end, String location) {
+    public Meeting(String name, LocalDateTime start, LocalDateTime end, String location)
+    {
         super(name, start);  // Calls the Event constructor for start time
         this.endDateTime = end;  // Sets the meeting's end time
         this.location = location;  // Sets the meeting location
@@ -25,7 +27,8 @@ public class Meeting extends Event implements Completable {
 
     //Marks the meeting as complete
     @Override
-    public void complete() {
+    public void complete()
+    {
         this.complete = true;
     }
 
