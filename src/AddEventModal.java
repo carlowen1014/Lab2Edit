@@ -62,7 +62,7 @@ public class AddEventModal extends JDialog
         });
         add(submitButton);
 
-        setSize(400, 300);
+        setSize(600, 400);
         setLocationRelativeTo(parent);  // Center the dialog relative to parent frame
     }
 
